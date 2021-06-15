@@ -18,7 +18,7 @@ export function useLanguagePickerContext() {
 
 export default function LanguageContext (props) {
     console.log("PROPS in LanguageContext:", props);
-    const [language, setLanguage] = useState()
+    const [language, setLanguage] = useState("nl")
 
 
     return (

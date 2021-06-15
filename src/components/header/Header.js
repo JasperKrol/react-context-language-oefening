@@ -4,8 +4,12 @@ import headerImage from '../../assets/wall-with-plants.jpg';
 import { ReactComponent as FlagNL } from '../../assets/netherlands.svg';
 import content from '../../data/content.json';
 import './Header.css';
+import { useLanguagePickerContext } from "../../contexts/LanguageContext";
 
-function Header() {
+function Header(props) {
+  console.log(props)
+  const {language, setLanguage } = useLanguagePickerContext()
+
   return (
     <>
       <header>
